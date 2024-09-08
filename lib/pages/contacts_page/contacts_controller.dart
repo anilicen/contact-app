@@ -73,6 +73,12 @@ class ContactsController extends Controller {
       profileImageUrl: imageUrl,
     );
     _contactRepository.createContact(contact);
+
+    firstName = '';
+    lastName = '';
+    phoneNumber = '';
+    image = null;
+
     refreshUI();
   }
 
